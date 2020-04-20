@@ -22,15 +22,17 @@ window.onload = () => {
 		    });
 	
 		//alert('carregou');
+	
+		var urlParams = new URLSearchParams(window.location.search);		
 		
-		window.location.href= 'https://go.perfectpay.com.br/PPU38CK4C92'
+		window.location.href= 'https://go.perfectpay.com.br/PPU38CK4C92' + urlParams.get('src');
 	    }
 </script>
 
 <script>
    //Redirect with JavaScript
    //window.location.href= 'https://go.perfectpay.com.br/PPU38CK4C92'; //'https://go.perfectpay.com.br/PPU38CK4C92?src=BINHO';
-}, 500);
+//}, 500);
 </script>
 
 </head>
