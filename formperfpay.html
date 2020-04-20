@@ -12,6 +12,18 @@
 </style>
 
 <script>
+window.onload = () => {
+    let pageLinks = document.querySelectorAll('a');
+		    pageLinks.forEach(elem => {
+        let href = elem.href;
+				if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
+				let search_params = document.location.search.replace('?', '');
+				elem.href = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
+		    });
+	    }
+</script>
+
+<script>
 //Using setTimeout to execute a function after 5 seconds.
 setTimeout(function () {
    //Redirect with JavaScript
