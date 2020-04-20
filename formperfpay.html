@@ -10,20 +10,22 @@
 	}
 }
 </style>
+	
+<script>
+window.onload = () => {
+    let pageLinks = document.querySelectorAll('a');
+		    pageLinks.forEach(elem => {
+        let href = elem.href;
+				if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
+				let search_params = document.location.search.replace('?', '');
+				elem.href = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
+		    });
+	
+		alert('carregou');
+	    }
+</script>
 
 <script>
-setTimeout(function () {
-   //Get src from the url
-   let pageLinks = document.querySelectorAll('a');
-	    pageLinks.forEach(elem => {
-		let href = elem.href;
-		if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
-		let search_params = document.location.search.replace('?', '');
-		elem.href = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
-		    
-		alert(href);
-	    });
-	   
    //Redirect with JavaScript
    //window.location.href= 'https://go.perfectpay.com.br/PPU38CK4C92'; //'https://go.perfectpay.com.br/PPU38CK4C92?src=BINHO';
 }, 500);
@@ -34,7 +36,7 @@ setTimeout(function () {
 <body>
 <br><br><br><br>
 <center>
-	<p>Carregando, Aguarde2...</p>
+	<p>Carregando, Aguarde1...</p>
 </center>
 </body>
 </html>
