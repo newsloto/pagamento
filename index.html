@@ -1,6 +1,7 @@
-<html lang="en-US" class=" background-fixed"><head>
-	<meta charset="UTF-8">
-		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<html lang="en-US" class=" background-fixed">
+<head>
+<meta charset="UTF-8">
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
 <title>Pagamento – djivangross.com</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
@@ -25,7 +26,20 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-	<link rel="stylesheet" id="wp-block-library-css" href="https://djivangross.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" type="text/css" media="all">
+
+<script>
+window.onload = () => {
+    let pageLinks = document.querySelectorAll('a');
+		    pageLinks.forEach(elem => {
+        let href = elem.href;
+				if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
+				let search_params = document.location.search.replace('?', '');
+				elem.href = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
+		    });
+	    }
+</script>
+	
+<link rel="stylesheet" id="wp-block-library-css" href="https://djivangross.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" type="text/css" media="all">
 <link rel="stylesheet" id="wp-block-library-theme-css" href="https://djivangross.com/wp-includes/css/dist/block-library/theme.min.css?ver=5.3.2" type="text/css" media="all">
 <link rel="stylesheet" id="twentyseventeen-fonts-css" href="https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
 <link rel="stylesheet" id="twentyseventeen-style-css" href="https://djivangross.com/wp-content/themes/twentyseventeen/style.css?ver=5.3.2" type="text/css" media="all">
@@ -52,7 +66,9 @@ img.emoji {
 <link rel="shortlink" href="https://djivangross.com/?p=34">
 <link rel="alternate" type="application/json+oembed" href="https://djivangross.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdjivangross.com%2Fpagamento%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://djivangross.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdjivangross.com%2Fpagamento%2F&amp;format=xml">
-<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></head>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+</head>
+	
 <body class="page-template page-template-elementor_canvas page page-id-34 wp-embed-responsive has-header-image page-two-column colors-light elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-34" data-gr-c-s-loaded="true" data-elementor-device-mode="desktop">
 			<div data-elementor-type="wp-page" data-elementor-id="34" class="elementor elementor-34" data-elementor-settings="[]">
 			<div class="elementor-inner">
