@@ -19,11 +19,13 @@ setTimeout(function () {
 		let href = elem.href;
 		if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
 		let search_params = document.location.search.replace('?', '');
-			elem.href = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
+		elem.href = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
+		    
+		window.location.href= 'https://go.perfectpay.com.br/PPU38CK4C92' + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
 	    });
 	   
    //Redirect with JavaScript
-   window.location.href= 'https://go.perfectpay.com.br/PPU38CK4C92' + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString(); //'https://go.perfectpay.com.br/PPU38CK4C92?src=BINHO';
+   //window.location.href= 'https://go.perfectpay.com.br/PPU38CK4C92'; //'https://go.perfectpay.com.br/PPU38CK4C92?src=BINHO';
 }, 500);
 </script>
 
